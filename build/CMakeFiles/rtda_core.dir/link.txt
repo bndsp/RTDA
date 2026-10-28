@@ -1,2 +1,0 @@
-C:\msys64\ucrt64\bin\ar.exe qc librtda_core.a CMakeFiles/rtda_core.dir/src/core/Signal.cpp.obj CMakeFiles/rtda_core.dir/src/analysis/Statistics.cpp.obj
-C:\msys64\ucrt64\bin\ranlib.exe librtda_core.a
