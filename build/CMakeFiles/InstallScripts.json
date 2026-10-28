@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Code/RTDA/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
