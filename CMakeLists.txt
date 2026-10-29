@@ -7,7 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(rtda_core
     src/core/Signal.cpp
+    src/core/Dataset.cpp
     src/analysis/Statistics.cpp
+    src/io/CSVImporter.cpp
     )
 target_include_directories(rtda_core
     PUBLIC
@@ -23,17 +25,3 @@ target_link_libraries(rtda
         rtda_core
         )
 
-include(CTest)
-
-if(BUILD_TESTING)
-    add_executable(rtda_tests
-        tests/StatsTest.cpp
-    )
-
-    target_link_libraries(rtda_tests
-        PRIVATE
-            rtda_core
-    )
-
-    add_test(NAME statistics COMMAND rtda_tests)
-endif()

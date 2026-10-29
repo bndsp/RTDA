@@ -13,6 +13,7 @@ namespace rtda {
         std::optional<double> timestamp;
 
         std::variant<
+            std::monostate,
             std::int64_t,
             double,
             std::string,
